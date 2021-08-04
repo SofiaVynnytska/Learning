@@ -7,10 +7,8 @@ import java.util.TreeMap;
 
 public class GeneralLearning {
 	static List<String> listOfTests;
-	static double maxTestResult, testResult, markReceived;
+	static double maxTestResult, testResult;
 	static Map<String, Double> maxTestMark;
-	static int numbOfExercise;
-	static String activityDone;
 
 	static String searchTheInternet(Human human){
 		return human.getName();
@@ -37,6 +35,6 @@ public class GeneralLearning {
 			testData.put(testName, mark);
 		}
 		human.setNotesForMarks(date, testData);
-		return "Додано бали за пройденi тести за : " + date + " ," + testData.toString();
+		return "Г„Г®Г¤Г Г­Г® ГЎГ Г«ГЁ Г§Г  ГЇГ°Г®Г©Г¤ГҐГ­i ГІГҐГ±ГІГЁ Г§Г  : " + date + " ," + testData.toString();
 	}
 }
