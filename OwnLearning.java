@@ -5,7 +5,6 @@ import java.util.Map;
 
 public class OwnLearning extends GeneralLearning{
 	static List<String> listOfBooks, listOfExercises;
-	static int numbOfBook, numbOfExercise;
 	static double bookPrice;
 	static Map<String, Double> mapOfBooksPrice;
 
@@ -15,7 +14,7 @@ public class OwnLearning extends GeneralLearning{
 			human.setBooksForLearning(listOfBooks.get(numbOfBook - 1));
 			bookName = listOfBooks.get(numbOfBook - 1);
 		} else {
-			bookName = "книжка не куплена";
+			bookName = "ГЄГ­ГЁГ¦ГЄГ  Г­ГҐ ГЄГіГЇГ«ГҐГ­Г ";
 		}
 		return bookName;
 	}
@@ -38,10 +37,10 @@ public class OwnLearning extends GeneralLearning{
 	static String viewAcivityDone(Human human, String activity){
 		switch(activity){
 		case "exercise":
-			activity = "виконані вправи : " + human.getExercisesDone().toString();
+			activity = "ГўГЁГЄГ®Г­Г Г­Ві ГўГЇГ°Г ГўГЁ : " + human.getExercisesDone().toString();
 			break;
 		case "test":
-			activity = "виконані тести : " + human.getTestsDone().toString();
+			activity = "ГўГЁГЄГ®Г­Г Г­Ві ГІГҐГ±ГІГЁ : " + human.getTestsDone().toString();
 		}
 		return activity;
 	}
